@@ -1,0 +1,31 @@
+<nav class="h-full w-full bg-black/10 flex flex-col gap-4 flex-1">
+
+    <div class="py-6 px-8 flex items-center gap-2 text-big-stone-600">
+        <img src="/public/images/capitol.svg" class="w-8 object-contain" alt="">
+        <span class="text-3xl font-semibold">teedy</span>
+    </div>
+
+    <div class="flex flex-col mt-6 pr-2 gap-1 flex-1">
+        <a href="index.html" class="w-full border border-b-[6px] py-4 px-8 border-black border-l-transparent rounded-r-xl cursor-pointer bg-white flex gap-3 items-center active:scale-x-95 active:border-b-[1px] origin-left">
+            <i class="fa fa-border-all text-lg"></i>
+            <span class="font-semibold">My Dashboard</span>
+        </a>
+        <a href="results.html" class="w-full py-4 px-8 rounded-r-xl cursor-pointer flex gap-3 items-center active:scale-x-90 origin-left hover:bg-black/10">
+            <i class="fa fa-border-all text-lg"></i>
+            <span class="font-semibold">My Results</span>
+        </a>
+        <div class="w-full py-4 px-8 rounded-r-xl cursor-pointer flex gap-3 items-center active:scale-x-90 origin-left hover:bg-black/10">
+            <i class="fa fa-border-all text-lg"></i>
+            <span class="font-semibold">My Profile</span>
+        </div>
+    </div>
+    
+    <div class="mb-6 pr-2">
+        <div id="logOut" onclick="performLogOut()" class="w-full py-4 px-8 rounded-r-xl cursor-pointer flex gap-3 items-center active:scale-x-95 origin-left hover:bg-black/10 border border-transparent active:border-b-[1px] hover:border-b-[6px] hover:border-black hover:bg-white hover:text-red-500 select-none">
+            <i class="fa-solid fa-arrow-right-from-bracket text-lg"></i>
+            <span class="font-semibold">Log out</span>
+        </div>
+    </div>
+    
+
+</nav>

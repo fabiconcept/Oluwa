@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSc. Computing | Create an account</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="grided-white grid place-items-center bg-pot-pourri-200 w-screen h-screen">
+        <div class="max-w-md w-full h-fit">
+            <section class="p-8 bg-white group rounded-lg shadow-lg border border-big-stone-600/50 relative">
+                <div class="absolute -top-4 -right-4 group-focus-within:animate-none group-hover:animate-none animate-pulse select-none pointer-events-none">
+                    <img 
+                        src="../public/images/teddy-bear (2).png" 
+                        alt="teddy-bear"
+                        class="h-24 group-focus-within:scale-[1.05] group-hover:scale-[1.025] select-none pointer-events-none"
+                        title="Login to proceed"
+                    >
+                </div>
+                <p class="text-4xl font-semibold text-big-stone-800">Create an account</p>
+        
+        
+                <form method="post" class=" mt-6 grid gap-3" id="formElement">
+                    <div class="grid gap-2">
+                        <label>Student name<span class="text-red-700 text-3xl">*</span>: <span class="text-red-600 text-sm" id="labelForStName"></span></label>
+                        <input 
+                            type="text" 
+                            placeholder="Jeffrey Dahmer" 
+                            name="stname"
+                            id="stname"
+                            required
+                            class="w-full p-4 outline-none border-2 border-big-stone-600 rounded-md placeholder-shown:border-big-stone-200 focus:placeholder-shown:border-big-stone-600 placeholder-shown:opacity-40 focus:placeholder-shown:opacity-100 opacity-100 placeholder-shown:bg-gray-200 focus:placeholder-shown:bg-transparent bg-transparent"
+                        >
+                    </div>
+                    <div class="grid gap-2">
+                        <span>Password code<span class="text-red-700 text-3xl">*</span>: <span class="text-red-600 text-sm" id="labelForStPass"></span></span>
+                        <input 
+                            type="password" 
+                            placeholder="Password" 
+                            name="pass"
+                            id="passInput"
+                            required
+                            class="w-full p-4 outline-none border-2 border-big-stone-600 rounded-md placeholder-shown:border-big-stone-200 focus:placeholder-shown:border-big-stone-600 placeholder-shown:opacity-40 focus:placeholder-shown:opacity-100 opacity-100 placeholder-shown:bg-gray-200 focus:placeholder-shown:bg-transparent bg-transparent"
+                        >
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full p-4 outline-none border-2 border-transparent rounded-md bg-big-stone-600 text-white active:scale-90 hover:bg-big-stone-700 cursor-pointer">
+                        Create account
+                    </button>
+                    <button type="reset" hidden id="resetBtn">reset</button>
+                </form>
+            </section>
+            <p class="p-4 w-full text-center">Already have an account? <a href="index.html" class="font-semibold text-blue-700 hover:underline-offset-8 underline">Sign in.</a></p>
+        </div>
+    </section>
+    
+    <script src="/src/lib/index.js"></script>
+    <script src="/src/lib/signup/index.js"></script>
+</body>
+</html>

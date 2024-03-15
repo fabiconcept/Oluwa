@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  transition: .15s ease;
+}
+
+body {
+  font-weight: 500;
+}
+
+.grided-white {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) .1em, transparent .1em), linear-gradient(90deg, rgba(255, 255, 255, 0.1) .1em, transparent .1em);
+    background-size: 2em 2em;
+}
+
+.grided-black {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.015) .1em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 0, 0.015) .1em, transparent .1em);
+    background-size: 2em 2em;
+}
